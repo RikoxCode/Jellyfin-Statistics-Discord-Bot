@@ -1,0 +1,47 @@
+# Update interval in milliseconds
+update_interval: 60000
+
+# Categorie config
+catagory:
+  # Whether to use the catagory or not
+  use: false
+  name: "📊 Stats"
+
+# Channel config
+channel:
+  name_template: "{icon} {title}: {value}"
+  type: "voice"
+
+  # If true, the statistic channels stay visible, but users cannot join or write in them.
+  # Note: Discord administrators with the Administrator permission cannot be fully blocked by overwrites.
+  private: true
+
+  # Showed statistics
+  showed_stats:
+  # Default stats to show, you can add more by adding more items to the list
+  - key: "total_users"
+    icon: "👥"
+    title: "Total Users"
+    value: "get_user_count"
+
+  - key: "total_movies"
+    icon: "🎬"
+    title: "Total Movies"
+    value: "get_movie_count"
+
+  - key: "total_series"
+    icon: "📺"
+    title: "Total Series"
+    value: "get_series_count"
+
+  - key: "total_watch_time"
+    icon: "⏱️"
+    title: "Total Watch Time"
+    value: "get_total_watch_time"
+
+bot:
+  # The prefix for bot commands
+  command_prefix: "!"
+
+  # Whether to enable the refresh command or not
+  refresh_enabled: true

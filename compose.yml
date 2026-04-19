@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    container_name: jellyfin-stats-bot
+    env_file: .env
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - JELLYFIN_SERVER_URL=${JELLYFIN_SERVER_URL}
+      - JELLYFIN_API_KEY=${JELLYFIN_API_KEY}
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - APP_CONFIG_DIR=/app/data
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

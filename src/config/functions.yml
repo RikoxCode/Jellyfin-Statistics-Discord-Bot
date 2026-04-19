@@ -1,0 +1,44 @@
+functions:
+  # Get the total number of users in the system
+  - key: "get_user_count"
+    enabled: true
+  
+  # Get the number of online users in the system
+  - key: "get_online_user_count"
+    enabled: true
+
+  # Get the total number of movies in the system
+  - key: "get_movie_count"
+    enabled: true
+
+  # Get the total number of series in the system
+  - key: "get_series_count"
+    enabled: true
+
+  # Get the total number of episodes in the system
+  - key: "get_episode_count"
+    enabled: true
+
+  # Get the total number of servers in the system
+  - key: "get_movie_watch_count"
+    enabled: true
+
+  # Get the total number of series watch count in the system
+  - key: "get_series_watch_count"
+    enabled: true
+
+  # Get the total number of episode watch count in the system
+  - key: "get_episode_watch_count"
+    enabled: true
+  
+  # Get the total watch time in the system
+  - key: "get_top_movies"
+    enabled: true
+  
+  # Get the top series in the system
+  - key: "get_top_series"
+    enabled: true
+
+  # Get the top episodes in the system
+  - key: "get_total_watch_time"
+    enabled: true
